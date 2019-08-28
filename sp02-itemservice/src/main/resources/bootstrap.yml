@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+         # 从注册中心查找config-server信息,找到localhost:6001
+      name: item-service
+      profile: dev
+      
+eureka:  client:    service-url:      defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
